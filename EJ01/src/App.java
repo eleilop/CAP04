@@ -3,9 +3,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Introduce un día de la semana (en minúscula y sin tilde): ");
+        System.out.print("Introduce un día de la semana (sin tilde): ");
         String dia = sc.nextLine();
         sc.close();
+        dia = dia.toLowerCase();
         switch (dia) {
             case "lunes":
                 System.out.printf("Los %s a primera hora toca programación", dia);
