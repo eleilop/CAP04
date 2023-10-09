@@ -31,7 +31,6 @@ public class App {
                 break;
             default:
                 System.out.printf("%s no es un día de la semana", dia);
-                break;
         }
     }
 }
